@@ -1,0 +1,37 @@
+body {
+    margin-bottom: 40px;
+    color: white;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.margin-right-5 {
+    margin-right: 5px;
+}
+
+.one-song {
+    padding: 15px;
+    background-color: rgb(46, 162, 201);
+    border: 2px solid darkblue;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px lightgray;
+}
+
+.one-song a {
+    color: lightcyan;
+    font-weight: 700;
+}
+
+.no-pad {
+    padding: 0;
+}
+
+.padding-left-15 {
+    padding-left: 15px;
+}
+
+.songApp {
+    background-image: url (/images/spotifysearchappbackground.png);
+}
