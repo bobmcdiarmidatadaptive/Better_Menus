@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
             // go get the tracks available from Spotify
             axios.get('https://api.spotify.com/v1/search?q=' + spotifyTrack + '&type=track', {
                     headers: {
-                        'Authorization': 'Bearer BQDvAMO6cGxj_ERNHrjRQmYes-EfqSc_-ECNf3cunBU3qHJNKMrmTp1b_7G3HEIkTD36u_qtI_aV2864OBxJPyNVxghlwsv8B34x14UvyKlfprHnbxFIaAZ_Q-PfHuhOWDpFJde9e3LtDiEs92GFeekz7HaXnDV-qY42SLiPbls'
+                        'Authorization': 'Bearer BQBVTSlqw_1p2hDkGIGkJN-Yvpy71Vaa7dZzhYaSCpCiLbBvru32at-VfirNw1DX-b9yC7ssSO0DcjtYcuc7dUpvcAmN7SpuZ41uLHy83wZxj8EbehlButAavzqhwvaDUjiIK2E-QDdRa0Nk_Uw3GyfnqgpLVPmbzZkq7B_N6dQ'
                     }
                 })
                 .then(function(response) {
