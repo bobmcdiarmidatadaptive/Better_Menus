@@ -20,3 +20,5 @@ Bob's Notes:
 10/29 - figured out how to get the array of items :) WOOHOO line , line 24
 
 10/30 - figured out innerHtml syntax - and how to embed the preview mpeg in the player. :)
+
+11/5 - removed hard coded key and instead jank it from the URL request

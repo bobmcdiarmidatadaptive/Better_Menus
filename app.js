@@ -9,6 +9,11 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("submitSong").value = data;
     }
 
+    const queryString = window.location.search;
+    console.log(queryString);
+    const urlParams = new URLSearchParams(queryString);
+    const daKey = urlParams.get('key');
+    console.log(daKey)
 
 
     document
@@ -20,10 +25,9 @@ document.addEventListener("DOMContentLoaded", function() {
             var spotifyTrack = document.getElementById("submitSong").value;
             console.log(spotifyTrack);
             // go get the tracks available from Spotify
-            axios.get('https://api.spotify.com/v1/search?q=' + spotifyTrack + '&type=track', {
-                    headers: {
-                        'Authorization': 'Bearer BQBVTSlqw_1p2hDkGIGkJN-Yvpy71Vaa7dZzhYaSCpCiLbBvru32at-VfirNw1DX-b9yC7ssSO0DcjtYcuc7dUpvcAmN7SpuZ41uLHy83wZxj8EbehlButAavzqhwvaDUjiIK2E-QDdRa0Nk_Uw3GyfnqgpLVPmbzZkq7B_N6dQ'
-                    }
+            axios
+                .get("https://api.spotify.com/v1/search?type=track&q=" + spotifyTrack, {
+                    headers: { 'Authorization': "Bearer " + daKey }
                 })
                 .then(function(response) {
 
