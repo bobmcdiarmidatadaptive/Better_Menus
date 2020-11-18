@@ -1,2 +1,2 @@
-# SpotifySearchApp
-General Assembly Class Project - Spotify Search App
+# Better Menus
+General Assembly Class Project - Final Project
