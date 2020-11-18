@@ -1,37 +1,156 @@
+.logo-wrapper {
+    display: block;
+    width: 400px;
+    min-height: 90px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.logo {
+    float: left;
+    margin-left: 16px;
+}
+
 body {
-    margin-bottom: 40px;
-    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.margin-top-20 {
-    margin-top: 20px;
-}
-
-.margin-right-5 {
-    margin-right: 5px;
-}
-
-.one-song {
-    padding: 15px;
-    background-color: rgb(46, 162, 201);
-    border: 2px solid darkblue;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px lightgray;
-}
-
-.one-song a {
-    color: lightcyan;
+h2 {
     font-weight: 700;
+    padding-top: 12px;
 }
 
-.no-pad {
-    padding: 0;
+header h6 {
+    margin-top: -10px;
 }
 
-.padding-left-15 {
-    padding-left: 15px;
+.siteNav {
+    background: darkgoldenrod;
+    color: white;
+    padding: 8px;
+    margin-top: 12px;
+    border-top: 1px solid darkblue;
 }
 
-.songApp {
-    background-image: url (/images/spotifysearchappbackground.png);
+.foodOuterWrapper {
+    background-image: url('./assets/2.jpg');
+    height: 1000px;
+    padding: 24px;
+}
+
+.jumbotron {
+    opacity: 0.9;
+    background-color: #000;
+    padding: 4px 4px;
+    border: 1px solid rgba(255, 255, 255, .5);
+}
+
+form#search-food input {
+    width: 85%;
+    opacity: 1.0;
+}
+
+.cardGroup {
+    /**
+   * Lay out the children of this container with
+   * flexbox, which is horizontal by default.
+   */
+    display: flex;
+    border-radius: 4px;
+}
+
+.cardGroup__card {
+    /**
+     * The flex property is a short-hand for setting
+     * the flex-grow, flex-shrink, and flex-basis
+     * properties. These properties control how the
+     * element resizes to fill its container.
+     *
+     * We'll set flex-grow to 1 so that it will
+     * expand to fill its container. (The default
+     * default value is 0.)
+     *
+     * We'll also set flex-shrink to 1 so that the
+     * element will shrink as its container gets
+     * smaller. (The default value is 1.)
+     *
+     * Last, we set flex-basis to 0 so that its
+     * size is solely determined by the size of
+     * the container. (The default value
+     * is auto, which would cause the content's
+     * size to also be a factor in this calculation.)
+     *
+     * The net result of these properties is that the
+     * element is a fluid size, and will expand and
+     * shrink with its container and siblings, but
+     * they will all have the same size, even if they
+     * have different amounts of content.
+     *
+     * NOTE: IE11 ignores flex short-hand declarations
+     * with unitless flex-basis values. So we have to
+     * use 0% instead of 0 as a workaround. You can
+     * find more info at:
+     * github.com/philipwalton/flexbugs.
+     */
+    flex: 1 1 0%;
+    border: none;
+    border-radius: 0;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    opacity: 0.9;
+    border: 1px solid saddlebrown;
+}
+
+.cardGroup__card:hover {
+    box-shadow: 0 0 1px 1px #fff;
+}
+
+.vegetable {
+    background: #ebfde7;
+}
+
+.chicken {
+    background: #e9e5d5;
+}
+
+.beef {
+    background: #e9d5e7;
+}
+
+.fish {
+    background: #d5e9e9;
+}
+
+.cardGroup__card+.cardGroup__card {
+    border-left: 1px solid #D7DBDD;
+}
+
+.cardGroup__cardDescription {
+    /**
+     * We're doing almost the exact same thing here as
+     * we did above. The difference is that its
+     * flex-basis is auto, so now the size of its content
+     * will affect how large it is.
+     */
+    flex: 1 1 auto;
+    padding-bottom: 12px;
+}
+
+.cardGroup__cardDescription img {
+    width: 114%;
+    margin-left: -16px;
+    border-top: 1px solid lightcoral;
+    border-bottom: 1px solid lightcoral;
+    margin-bottom: 16px;
+    max-height: 137px;
+    max-width: 270px;
+}
+
+.card__price button {
+    font-size: 11px;
+    margin-right: 8px;
+    font-weight: 700;
 }

@@ -2,89 +2,102 @@
 <html>
 
 <head>
-    <title>Spotify API Player</title>
+    <title>Better Menus - a JS App by Bob McDiarmid</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
 
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <!--jQuery-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
-
+    <script src="https://kit.fontawesome.com/c6f1fb4b35.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.js"></script>
     <script src="app.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.0.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/8.0.2/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+
 </head>
 
 <body>
 
-    <div class="container margin-top-20 songApp">
-        <div class="pull-right">
-            <a href="#" class="btn btn-info">Login to Spotify</a>
-            <a href="#" class="btn btn-warning">View Saved Tracks</a>
+    <header style="min-height: 80px;">
+        <div class="logo-wrapper">
+            <img class="logo" src="./assets/logo.png" alt="logo">
+            <h2>Better Menus</h2>
+            <h6>Making Delicious Food Easy</h6>
         </div>
 
-        <div class="clearfix"></div>
-        <!--Search Form-->
-        <div class="row margin-top-20">
-            <form id="trackSearch">
-                <div class="col-sm-10">
-                    <input id="submitSong" type="text" name="search" class="form-control" placeholder="Search for Songs!" />
-                </div>
-                <div class="col-sm-2">
-                    <button type="submit" class="btn btn-primary btn-block">Search Songs</button>
-                </div>
-            </form>
-        </div>
-        <!--/Search Form-->
-        <div id="songCard">
-            <script id="song-template" type="x-handlers-template">
+    </header>
+    <div class="foodOuterWrapper">
+        <div class="container">
+            <div class="jumbotron">
+                <form id="search-food">
+                    <input value="   enter your ingredients here and get four great recipes you can make...."></input>
+                    <button id="searchSpoonacular" type="submit" value="ID" class="btn btn-success btn-sm"> Search Recipes </button>
+                </form>
 
-                <div id="song-container">
-                    <!--One Song-->
-                    <div class="row margin-top-20 one-song">
-                        <div class="col-sm-3">
-                            <img src="{{image}}" class="img-responsive" />
-                        </div>
-                        <div class="col-sm-9">
-                            <h2>{{name}}</h2>
-                            <p>
-                                Recorded by <a href="{{artistopenin}}" target="_blank">{{recording}}</a>
-                            </p>
-                            <p>
-                                Album: {{album}}
-                            </p>
-                            <div class="margin-top-20">
-                                <audio controls src="{{mpeg}}"></audio>
-
-
-                            </div>
-                            <div class="margin-top-20">
-                                <button type="submit" class="btn btn-success btn-sm">
-                            <span class="glyphicon glyphicon-ok margin-right-5"></span>
-                            Save Track
-                        </button>
-                                <a href="{{openin}}" target="_blank" class="btn btn-info btn-sm">
-                                    <span class="glyphicon glyphicon-ok margin-right-5"></span> Open This Track in Spotify
-                                </a>
-                            </div>
-                        </div>
+            </div>
+            <div class="cardGroup">
+                <div class="card cardGroup__card vegetable">
+                    <div class="card__description cardGroup__cardDescription">
+                        <div class="icon fas fa-leaf card__descriptionIcon"></div>
+                        <div class="card__descriptionText">Vegetables</div>
+                        <h4>Meal Title</h4>
+                        <img src="./assets/vegetables.jpg"> <br/> description of the recipe<br/>
                     </div>
-                    <!--/One Song-->
+                    <div class="card__price"><button type="button" class="btn btn-sm btn-outline-primary"><div class="fas fa-arrow-circle-left"></div> Recipe Card</button><button type="button" class="btn btn-sm btn-outline-success">Shopping List<div class="fas fa-arrow-circle-right"></div></button></div>
+
+                </div>
+                <div class="card cardGroup__card chicken">
+                    <div class="card__description cardGroup__cardDescription">
+                        <div class="icon fas fa-drumstick-bite card__descriptionIcon"></div>
+                        <div class="card__descriptionText">Chicken</div>
+                        <h4>Meal Title</h4>
+                        <img src="./assets/chicken.jpg"> <br/> description of the recipe<br/>
+                    </div>
+                    <div class="card__price"><button type="button" class="btn btn-sm btn-outline-primary"><div class="fas fa-arrow-circle-left"></div> Recipe Card</button><button type="button" class="btn btn-sm btn-outline-success">Shopping List  <div class="fas fa-arrow-circle-right"></div></button></div>
                 </div>
 
-                <script>
-                    < /div>
+                <div class="card cardGroup__card beef">
+                    <div class="card__description cardGroup__cardDescription">
+                        <div class="icon fas fa-hamburger card__descriptionIcon"></div>
+                        <div class="card__descriptionText">Beef</div>
+                        <h4>Meal Title</h4>
+                        <img src="./assets/burger.jpeg"> description of the recipe<br/>
+                    </div>
+                    <div class="card__price"><button type="button" class="btn btn-sm btn-outline-primary"><div class="fas fa-arrow-circle-left"></div> Recipe Card</button><button type="button" class="btn btn-sm btn-outline-success">Shopping List  <div class="fas fa-arrow-circle-right"></div></button></div>
 
-                    <
-                    /div>
+                </div>
+                <div class="card cardGroup__card fish">
+                    <div class="card__description cardGroup__cardDescription">
+                        <div class="icon fas fa-fish card__descriptionIcon"></div>
+                        <div class="card__descriptionText">Fish</div>
+                        <h4>Meal Title</h4>
+                        <img src="./assets/fish.jpg"><br/> description of the recipe<br/>
+                    </div>
+                    <div class="card__price"><button type="button" class="btn btn-sm btn-outline-primary">Recipe Card</button><button type="button" class="btn btn-sm btn-outline-success">Shopping List  <div class="fas fa-arrow-circle-right"></div></button></div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 
-                    <
-                    /body>
 
+</body>
 
-                    <
-                    /html>
+</html>
