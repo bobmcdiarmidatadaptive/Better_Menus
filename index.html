@@ -41,113 +41,19 @@
         </div>
 
     </header>
+
     <div class="foodOuterWrapper">
-        <div id="background">
-            <img src="./assets/2.jpg" class="stretch" alt="" />
-        </div>
+
         <div class="container">
             <div class="jumbotron">
                 <form id="search-food">
-                    <input value="   enter your ingredients here and get four great recipes you can make...."></input>
+                    <input id="ingredients" type="text" name="search" class="form-control" placeholder="Enter your ingredients" />
                     <button id="searchSpoonacular" type="submit" value="ID" class="btn btn-success btn-sm"> Search Recipes </button>
                 </form>
 
             </div>
-            <div class="row RecipeCards">
-                <div class="cardWrapper col-sm-12 col-md-6 col-lg-3">
-                    <div class="card cardGroup__card vegetable">
-                        <div class="card__description cardGroup__cardDescription">
-                            <div class="icon fas fa-leaf card__descriptionIcon"></div>
-                            <div class="card__descriptionText">Vegetables</div>
-                            <h4>Meal Title</h4>
-                            <img src="./assets/vegetables.jpg"> <br/> description of the recipe<br/>
-                        </div>
-                        <div class="card__price">
-                            <button type="button" class="btn btn-sm btn-outline-primary">
-                                <div class="fas fa-arrow-circle-left">
-                                </div> Recipe Card
-                            </button>
-                            <button type="button" class="btn btn-sm btn-outline-success">
-                                Shopping List
-                                <div class="fas fa-arrow-circle-right">
-                                </div>
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <div class="cardWrapper col-sm-12 col-md-6 col-lg-3">
-                    <div class="card cardGroup__card chicken">
-                        <div class="card__description cardGroup__cardDescription">
-                            <div class="icon fas fa-drumstick-bite card__descriptionIcon"></div>
-                            <div class="card__descriptionText">Chicken</div>
-                            <h4>Meal Title</h4>
-                            <img src="./assets/chicken.jpg"> <br/> description of the recipe<br/>
-                        </div>
-                        <div class="card__price">
-                            <button type="button" class="btn btn-sm btn-outline-primary">
-                                <div class="fas fa-arrow-circle-left">
-                                </div> Recipe Card
-                            </button>
-                            <button type="button" class="btn btn-sm btn-outline-success">
-                                Shopping List
-                                <div class="fas fa-arrow-circle-right">
-                                </div>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cardWrapper col-sm-12 col-md-6 col-lg-3">
-                    <div class="card cardGroup__card beef">
-                        <div class="card__description cardGroup__cardDescription">
-                            <div class="icon fas fa-hamburger card__descriptionIcon"></div>
-                            <div class="card__descriptionText">Beef</div>
-                            <h4>Meal Title</h4>
-                            <img src="./assets/burger.jpeg"><br/> description of the recipe<br/>
-                        </div>
-                        <div class="card__price">
-                            <button type="button" class="btn btn-sm btn-outline-primary">
-                                <div class="fas fa-arrow-circle-left">
-                                </div> Recipe Card
-                            </button>
-                            <button type="button" class="btn btn-sm btn-outline-success">
-                                Shopping List
-                                <div class="fas fa-arrow-circle-right">
-                                </div>
-                            </button>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="cardWrapper col-sm-12 col-md-6 col-lg-3">
-                    <div class="card cardGroup__card fish">
-                        <div class="card__description cardGroup__cardDescription">
-                            <div class="icon fas fa-fish card__descriptionIcon"></div>
-                            <div class="card__descriptionText">Fish</div>
-                            <h4>Meal Title</h4>
-                            <img src="./assets/fish.jpg"><br/> description of the recipe<br/>
-                        </div>
-                        <div class="card__price">
-                            <button type="button" class="btn btn-sm btn-outline-primary">
-                                <div class="fas fa-arrow-circle-left">
-                                </div> Recipe Card
-                            </button>
-                            <button type="button" class="btn btn-sm btn-outline-success">
-                                Shopping List
-                                <div class="fas fa-arrow-circle-right">
-                                </div>
-                            </button>
-                        </div>
-
-                    </div>
-
-                </div>
-
+            <div id="recipeCards" class="row">
+                this is where the cards.hbs will print
             </div>
 
         </div>
