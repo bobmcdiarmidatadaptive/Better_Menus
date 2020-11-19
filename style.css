@@ -16,7 +16,7 @@ header {
 }
 
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 h2 {
@@ -41,14 +41,9 @@ header h6 {
     background-image: url("./assets/2.jpg");
     border: 1px solid black;
     max-width: 1400px;
-    height: 1281px;
+    height: 1300px;
     margin-left: auto;
     margin-right: auto;
-}
-
-#recipeCards {
-    background: beige;
-    padding: 5px;
 }
 
 #background {
@@ -74,10 +69,17 @@ header h6 {
 }
 
 form#search-food input {
-    width: 83%;
+    width: 88%;
     opacity: 1.0;
+    float: left;
+    height: 31px;
+    margin-right: 8px;
 }
 
+
+}
+
+}
 .cardGroup {
     /**
    * Lay out the children of this container with
@@ -86,7 +88,6 @@ form#search-food input {
     display: flex;
     border-radius: 4px;
 }
-
 .cardGroup__card {
     /**
      * The flex property is a short-hand for setting
@@ -121,41 +122,34 @@ form#search-food input {
      * github.com/philipwalton/flexbugs.
      */
     border: none;
-    min-height: 350px;
+    min-height: 390px;
     border-radius: 0;
     margin-right: 8px;
     margin-bottom: 8px;
-    padding: 16px;
+    padding-bottom: 16px;
     border-radius: 8px;
     text-align: center;
     opacity: 0.9;
     border: 1px solid saddlebrown;
 }
-
 .cardGroup__card:hover {
     box-shadow: 0 0 1px 1px #fff;
 }
-
 .vegetable {
     background: #ebfde7;
 }
-
 .chicken {
     background: #e9e5d5;
 }
-
 .beef {
     background: #e9d5e7;
 }
-
 .fish {
     background: #d5e9e9;
 }
-
 .cardGroup__card+.cardGroup__card {
     border-left: 1px solid #D7DBDD;
 }
-
 .cardGroup__cardDescription {
     /**
      * We're doing almost the exact same thing here as
@@ -166,7 +160,6 @@ form#search-food input {
     flex: 1 1 auto;
     padding-bottom: 12px;
 }
-
 .cardGroup__cardDescription img {
     width: 114%;
     margin-left: -16px;
@@ -175,14 +168,13 @@ form#search-food input {
     margin-bottom: 16px;
     max-height: 137px;
     max-width: 273px;
+    border-radius: 8px 8px 0px 0px;
 }
-
 .card__price button {
     font-size: 11px;
     margin-right: 8px;
     font-weight: 700;
 }
-
 .col,
 .col-1,
 .col-10,
