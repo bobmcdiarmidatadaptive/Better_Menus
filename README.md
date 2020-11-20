@@ -1,24 +1,15 @@
-# Spotify Song Search with oAuth
+# Menu Planner
 
-In this lab we will be building a Spotify song search interface with the ability to save and retrieve songs from users' profiles. Here are the requirements for the application:
+*Click SEARCH RECIPES*
 
-- The application should first allow the user to enter a search query and see a list of results populated. [(see search endpoint)](https://developer.spotify.com/web-api/search-item/)
+Do a axios get to spoontacular and pull recipes based on our value
+https://rapidapi.com/spoonacular/api/recipe-food-nutrition?endpoint=55e1b3e1e4b0b74f06703be6
 
-- The app should also allow the user to log into Spotify with their credentials. [(see authorization docs)](https://developer.spotify.com/web-api/authorization-guide/)
+Use the returned records to rewrite the cards with the results: meal title, photograph, descriptive sentence
 
-- The app should allow the user to save a track to their saved list and see all of their saves on the saved.html template. [(see library endpoints)](https://developer.spotify.com/web-api/library-endpoints/)
+With *CLICK RECIPE CARD* - to load modal of the entire recipe
+With *CLICK SHOPPING LIST* - to send recipe to FIREBASE Db - Shopping List
 
-- Since you will be modifying the user's account, you will need additional scoped permissions (user-library-read user-library-modify).
+If *SHOPPING LIST HAS VALUE* - show the “Show my shopping list” button after cards, on click - reload page to #shoppingList page. and use a Firebase call to pull the shopping list.
 
-- You can [read more about scoped permissions here](https://developer.spotify.com/web-api/using-scopes/).
-
-Bob's Notes:
-
-
-10/29 - Got the get working in the Spotify API and it returns a crazy amount of stuff, gonna work next on parsing it out and getting only what I want.
-
-10/29 - figured out how to get the array of items :) WOOHOO line , line 24
-
-10/30 - figured out innerHtml syntax - and how to embed the preview mpeg in the player. :)
-
-11/5 - removed hard coded key and instead jank it from the URL request
+Give options on #shoppingList page to edit the shopping list - add items and delete items.
