@@ -2,20 +2,33 @@
 
 
 <div class="recipe-wrapper">
-    <img src="{{image}}" style="float: right;"
+    <img src="{{image}}" style=" margin: 25px; float: right;"
     <h1>{{title}}</h1>
 
-    <h6>Ingredients</h6>
+    <h2>Ingredients</h2>
+    <br/><br/>
     <ul>
-    <li>{{ingredientsa}}</li>
-    <li>{{ingredientsb}}</li>
-    <li>{{ingredientsc}}</li>
-    <li>{{ingredientsd}}</li>
-    <li>{{ingredientse}}</li>
-    <li>{{ingredientsf}}</li>
-    <li>{{ingredientsg}}</li>
+    <li>{{ingredient1}}</li>
+    <li>{{ingredient2}}</li>
+    <li>{{ingredient3}}</li>
+    <li>{{ingredient4}}</li>
+    <li>{{ingredient5}}</li>
+    <li>{{ingredient6}}</li>
     </ul>
 
+    <button id="openshopping" type="button" class="btn btn-sm btn-outline-success">
+                                Send Ingredients to Shopping List
+                    <div class="fas fa-arrow-circle-right">
+                    </div>
+    </button>
+
+    <hr/>
     <h6>Description</h6>
     <p>{{instructions}}</p>
 </div>
+
+<style>
+    .jumbotron .search {
+        display: none;
+    }
+</style>
