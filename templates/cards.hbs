@@ -7,11 +7,12 @@
             <small>{{likes}} Likes <i class="fas fa-thumbs-up"></i></small>
         </div>
         <div class="card__price">
-                <button data-toggle="modal" data-recipeID="{{id}}" data-target="#recipe" type="button" class="btn btn-sm btn-outline-primary">
+            <a class="btn btn-sm btn-outline-success" href="#/recipe" recipeID={{id}}>
                     <div class="fas fa-arrow-circle-left">
                     </div>
                     Recipe Card
-                </button>
+
+            </a>
                 <button type="button" class="btn btn-sm btn-outline-success">
                                 Shopping List
                     <div class="fas fa-arrow-circle-right">
@@ -30,7 +31,7 @@
                                 <br/><br/>
                             </div>
                             <div class="modal-body">
-                                    {{ fullRecipe}}
+                                    {{ fullRecipe }}
                             </div>
 
                         </div>

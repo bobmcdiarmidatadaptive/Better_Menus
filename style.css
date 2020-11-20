@@ -248,3 +248,10 @@ form#search-food input {
     padding-left: 1px;
     padding-right: 1px;
 }
+.recipe-wrapper {
+    background: beige;
+    border-radius: 8px;
+    padding: 32px;
+}
+
+/* bobb */
