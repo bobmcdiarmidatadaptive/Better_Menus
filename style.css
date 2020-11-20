@@ -36,18 +36,12 @@ header h6 {
     border-top: 1px solid darkblue;
 }
 
-body {
-    background: url("./assets/2.jpg") no-repeat center center fixed;
-    background-size: cover;
-    height: 100%;
-}
-
 .foodOuterWrapper {
     padding: 24px;
     background-image: url("./assets/2.jpg");
     border: 1px solid black;
     max-width: 1400px;
-    height: 1300px;
+    height: 1281px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -75,7 +69,7 @@ body {
 }
 
 form#search-food input {
-    width: 88%;
+    width: 89%;
     opacity: 1.0;
     float: left;
     height: 31px;
@@ -84,13 +78,12 @@ form#search-food input {
 
 
 }
-
-}
 .cardGroup {
     /**
    * Lay out the children of this container with
    * flexbox, which is horizontal by default.
    */
+    
     display: flex;
     border-radius: 4px;
 }
@@ -127,8 +120,9 @@ form#search-food input {
      * find more info at:
      * github.com/philipwalton/flexbugs.
      */
+    
     border: none;
-    min-height: 390px;
+    min-height: 350px;
     border-radius: 0;
     margin-right: 8px;
     margin-bottom: 8px;
@@ -163,6 +157,7 @@ form#search-food input {
      * flex-basis is auto, so now the size of its content
      * will affect how large it is.
      */
+    
     flex: 1 1 auto;
     padding-bottom: 12px;
 }
@@ -254,10 +249,3 @@ form#search-food input {
     padding-left: 1px;
     padding-right: 1px;
 }
-.recipe-wrapper {
-    background: beige;
-    border-radius: 8px;
-    padding: 32px;
-}
-
-/* bobb */
