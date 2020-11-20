@@ -36,6 +36,12 @@ header h6 {
     border-top: 1px solid darkblue;
 }
 
+body {
+    background: url("./assets/2.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+}
+
 .foodOuterWrapper {
     padding: 24px;
     background-image: url("./assets/2.jpg");
