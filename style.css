@@ -61,13 +61,6 @@ header h6 {
     height: 100%;
 }
 
-.jumbotron {
-    opacity: 0.9;
-    background-color: #000;
-    padding: 4px 4px;
-    border: 1px solid rgba(255, 255, 255, .5);
-}
-
 form#search-food input {
     width: 83%;
     opacity: 1.0;
@@ -76,17 +69,15 @@ form#search-food input {
     margin-right: 8px;
 }
 
-
-}
 .cardGroup {
     /**
    * Lay out the children of this container with
    * flexbox, which is horizontal by default.
    */
-    
     display: flex;
     border-radius: 4px;
 }
+
 .cardGroup__card {
     /**
      * The flex property is a short-hand for setting
@@ -120,9 +111,8 @@ form#search-food input {
      * find more info at:
      * github.com/philipwalton/flexbugs.
      */
-    
     border: none;
-    min-height: 350px;
+    min-height: 425px;
     border-radius: 0;
     margin-right: 8px;
     margin-bottom: 8px;
@@ -130,26 +120,32 @@ form#search-food input {
     border-radius: 8px;
     text-align: center;
     opacity: 0.9;
-    border: 1px solid saddlebrown;
 }
+
 .cardGroup__card:hover {
     box-shadow: 0 0 1px 1px #fff;
 }
+
 .vegetable {
     background: #ebfde7;
 }
+
 .chicken {
     background: #e9e5d5;
 }
+
 .beef {
     background: #e9d5e7;
 }
+
 .fish {
     background: #d5e9e9;
 }
+
 .cardGroup__card+.cardGroup__card {
     border-left: 1px solid #D7DBDD;
 }
+
 .cardGroup__cardDescription {
     /**
      * We're doing almost the exact same thing here as
@@ -157,10 +153,10 @@ form#search-food input {
      * flex-basis is auto, so now the size of its content
      * will affect how large it is.
      */
-    
     flex: 1 1 auto;
     padding-bottom: 12px;
 }
+
 .cardGroup__cardDescription img {
     width: 114%;
     margin-left: -16px;
@@ -171,11 +167,13 @@ form#search-food input {
     max-width: 273px;
     border-radius: 8px 8px 0px 0px;
 }
+
 .card__price button {
     font-size: 11px;
     margin-right: 8px;
     font-weight: 700;
 }
+
 .col,
 .col-1,
 .col-10,
