@@ -7,12 +7,10 @@
     <h2>Ingredients</h2>
     <br/><br/>
     <ul>
-    <li>{{ingredient1}}</li>
-    <li>{{ingredient2}}</li>
-    <li>{{ingredient3}}</li>
-    <li>{{ingredient4}}</li>
-    <li>{{ingredient5}}</li>
-    <li>{{ingredient6}}</li>
+        {{#each ingredients}}
+
+<li class="list-item">{{this.original}}</li>
+{{/each}}
     </ul>
 
     <a href="#/shopping" class="btn btn-sm btn-outline-success">

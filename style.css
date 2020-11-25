@@ -247,3 +247,19 @@ form#search-food input {
     padding-left: 1px;
     padding-right: 1px;
 }
+
+table,
+tbody,
+td,
+tr {
+    border: none;
+}
+
+.recipe-wrapper {
+    margin: 32px;
+}
+
+.recipeCards .jumbotron {
+    margin: 32px;
+    width: 100%;
+}
