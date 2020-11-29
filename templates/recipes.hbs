@@ -1,10 +1,13 @@
 
 <div class="row">
 <div class="recipe-wrapper" style="background: beige; padding: 32px;">
-    <img src="{{image}}" style=" margin: 25px; float: right;"
-    <h1>{{title}}</h1>
+    <div class="recipe-title">{{title}}<hr/></div>
+    <img src="{{image}}" style=" border:2px solid black; margin: 25px; float: right;">
 
-    <h2>Ingredients</h2>
+    <h5>Spoonacular Score: {{score}} <super>*</super></h5>
+    <h5>Price per serving: {{cost}}</h5>
+    <br/><br/>
+    <b>Ingredients</b>
     <br/><br/>
     <ul>
         {{#each ingredients}}
@@ -13,16 +16,20 @@
 {{/each}}
     </ul>
 
-    <a href="#/shopping" class="btn btn-sm btn-outline-success">
+    <a href="#/shopping" style="margin-top: 24px" class="btn btn-sm btn-outline-success">
                                 Send Ingredients to Shopping List
                     <div class="fas fa-arrow-circle-right">
                     </div>
 
       </a>
 
-    <hr/>
-    <h6>Description</h6>
-    <p>{{instructions}}</p>
+
+    <b><div style="margin-top: 24px; margin-bottom: 24px;">Instructions<br/><br/>{{{instructions}}}</div></b>
+
+    <br/>
+    <div style="margin-top: 24px; margin-bottom: 24px;"><b>What do other cooks think of this recipe?</b></div>
+    <p>{{{summary}}}</p>
+    <small><super>*</super><b>The Spoonacular score</b> compares this recipe with all the other recipes in the <a href="https://spoonacular.com/" target="_blank">Spoonacular database</a>.  The Spoonacular <i>top-secret formula</i>takes into consideration price (the cheaper the better!), difficulty (the easier the better!), popularity (# of Facebook likes, Pinterest pins, spoonacular saves...), and the health score.</small>
 </div>
 </div>
 
@@ -32,5 +39,5 @@
     }
 </style>
 
-<a href="#/search" style="margin-top: 24px; float: right;" class="mb-4 btn btn-sm btn-success">Back to Recipe Search</a>
+<a href="#/search#top" style="margin-top: 24px; float: right;" class="mb-4 btn btn-sm btn-success">Back to Recipe Search</a>
 <br clear="all">
