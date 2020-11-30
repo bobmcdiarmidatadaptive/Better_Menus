@@ -1,41 +1,16 @@
 
-<div class = "jumbotron" style="width: 100%; background: beige; color: black;">
-    <h3> Welcome to your shopping list </h3><br/><br/>
-
-    <table class="shopping-list-for-email" border="1" cellpadding="1" cellspacing="1" style="margin-left: auto; margin-right: auto; width:500px;">
-		<tbody>
-			{{#each ingredients}}
-			<tr>
-				<td>{{this.original}}</td>
-				<td><i id="{{id}}" class="far fa-trash-alt"></i></td>
-				<td>&nbsp;</td>
-			</tr>
-			{{/each}}
-			<tr>
-				<td>
-				<button class="btn btn-primary">Save Your Shopping List  <i class="fas fa-save"></i></button>
-				</td>
-			</tr>
-		</tbody>
-
-	</table>
-        <hr/>
-        <h4>Add a new item</h4>
-        <table></table>
-        <tr>
-            <form><td> <input style="float: left; margin-right: 25px;" placeholder="add extra items here"></td></form>
-			<td><i id="remove" class="far fa-save-alt"></i></td>
-			<td>&nbsp;</td>
-		</tr>
-	    </tbody>
-        </table>
-
-		<form>
-			<button type="submit"  class="btn btn-success">Email my shopping list  <i class="fas fa-paper-plane"></i></button>
-		</form>
-
-
-
+<div class="cardWrapper col-sm-6  col-lg-3">
+    <div class="shoppingCard">
+    <h5> Recipe: {{DBrecipeName}}</h5>
+    <ul>
+		<li>{{DBfood1}}</li>
+		<li>{{DBfood2}}</li>
+		<li>{{DBfood3}}</li>
+		<li>{{DBfood4}}</li>
+		<li>{{DBfood5}}</li>
+		<li>{{DBfood6}}</li>
+	</ul>
+    </div>
 </div>
 
 <style>
@@ -43,6 +18,3 @@
         display: none;
     }
 </style>
-
-<a href="#/search" style="float: right;" class="mb-4 btn btn-sm btn-success">Back to Recipe Search</a>
-<br clear="all">

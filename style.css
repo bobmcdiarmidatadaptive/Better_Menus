@@ -140,6 +140,19 @@ form#search-food input {
     opacity: 0.9;
 }
 
+.shoppingCard {
+    border: 1px solid lightgray;
+    background: beige;
+    min-height: 392px;
+    border-radius: 0;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: left;
+    opacity: 0.9;
+}
+
 .cardGroup_card h5 {
     color: black;
 }
