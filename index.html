@@ -46,6 +46,7 @@
     <div class="foodOuterWrapper">
         <a name="top"></a>
         <div class="container">
+            <!-- This div - the Search block - only displays on the search and card results page, but is hidden on the recipe and shopping pages -->
             <div class="search">
                 <form id="search-food">
                     <input id="thedish" type="text" name="search" class="form-control" placeholder="Enter a food you like and hit SEARCH" />
@@ -61,9 +62,17 @@
         <div id="recipeCards" style="margin-top: 32px;" class="row">
 
         </div>
+        <!-- This div - the addItems block - only displays on the shopping page -->
+        <div class="addItems">
+            <form id="customShoppingList">
+                Add your extra ingredients here to create a shopping card:<br/>
+                <input type="text" name="customfood1" placeholder="breakfast berries">
+                <input type="text" name="customfood2" placeholder="schlitz45">
+                <input type="text" name="customfood3" placeholder="pop rocks">
+                <input type="text" name="customfood4" placeholder="2% milk">
+                <button style="height: 38px;" id="CustomShopping" type="submit" value="ID" class="btn btn-success btn-sm"> <i class="fas fa-search"></i>  Create Custom Shopping Card</button>
+            </form>
 
-        <div class="addItems" style="color: black; background:pink;">
-            this is where the add items form will go.
         </div>
 
 

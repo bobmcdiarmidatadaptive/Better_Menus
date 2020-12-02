@@ -146,8 +146,9 @@ form#search-food input {
 
 .shoppingCard {
     border: 1px solid lightgray;
-    background: beige;
-    min-height: 392px;
+    background-color: beige;
+    /* Resize the background image to cover the entire container */
+    min-height: 400px;
     border-radius: 0;
     margin-right: 8px;
     margin-bottom: 8px;
@@ -155,6 +156,11 @@ form#search-food input {
     border-radius: 8px;
     text-align: left;
     opacity: 0.9;
+}
+
+button#deleteRecipe {
+    position: absolute;
+    bottom: 24px;
 }
 
 .cardGroup_card h5 {
