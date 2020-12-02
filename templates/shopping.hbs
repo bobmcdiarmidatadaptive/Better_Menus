@@ -1,24 +1,22 @@
 
 <div class="cardWrapper col-sm-6  col-lg-3">
     <div class="shoppingCard">
-    <h5>{{DBrecipeName}}</h5>
-    <ul>
-		<li>{{DBfood1}}</li>
-		<li>{{DBfood2}}</li>
-		<li>{{DBfood3}}</li>
-		<li>{{DBfood4}}</li>
-		<li>{{DBfood5}}</li>
-		<li>{{DBfood6}}</li>
-	</ul>
-	
+    <h5>Shopping List for<br/>{{DBrecipeName}}</h5>
+		{{DBfood1}}<br/>
+		{{DBfood2}}<br/>
+		{{DBfood3}}<br/>
+		{{DBfood4}}<br/>
+		{{DBfood5}}<br/>
+		{{DBfood6}}<br/>
 		<button class="btn-sm btn-danger" deleteID="{{shoppingID}}"  id="deleteRecipe" class="btn-danger">remove</button>
-	
-
     </div>
 </div>
 
 <style>
     div.search {
-        display: none;
+	  display: none;
     }
+	.addItems {
+		display: block;
+	}
 </style>

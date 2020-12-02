@@ -65,6 +65,10 @@ header h6 {
     height: 100%;
 }
 
+.addItems {
+    display: none;
+}
+
 form#search-food input {
     width: 80%;
     opacity: 1.0;
