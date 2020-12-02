@@ -160,6 +160,11 @@ form#search-food input {
 
 button#deleteRecipe {
     position: absolute;
+    bottom: 65px;
+}
+
+button#returntoRecipe {
+    position: absolute;
     bottom: 24px;
 }
 
